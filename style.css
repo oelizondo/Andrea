@@ -1,0 +1,15 @@
+.mydiv {
+	background: pink;
+}
+
+.landing-title {
+	background: blue;
+	height: 100px;
+	width: 100px;
+}
+
+.landing-subtitle {
+	height: 200px;
+	width: 200px;
+	background: green;
+}

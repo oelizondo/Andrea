@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 
-.center {
+.text-center {
     text-align: center;
 }
 
@@ -16,18 +16,15 @@ body {
 }
 
 .flex-wrap {
-    display: flex;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
 }
 .flex-center {
-    display: flex;
     -webkit-justify-content: center;
             justify-content: center;
 }
 .flex-column {
-    display: flex;
     -webkit-flex-flow: column;
         -ms-flex-flow: column;
             flex-flow: column;
@@ -36,3 +33,15 @@ body {
 .landing-height {
     height: 100vh;
 }
+
+.vertical-align {
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.border-box {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
