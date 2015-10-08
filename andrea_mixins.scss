@@ -1,5 +1,21 @@
 @mixin border-box {
-	-webkit-box-sizing: border-box;` 
-	-moz-box-sizing: border-box; 
-	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;`
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg)
+    -moz-transform: rotate($deg)
+    -ms-transform: rotate($deg)
+    -o-transform: rotate($deg)
+    transform: rotate($deg)
+}
+
+@mixin font-styles($family, $weight, $size, $color) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
