@@ -1,0 +1,53 @@
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.one {
+  width: calc(100%/12)
+}
+
+.two {
+  width: calc(100%/6)
+}
+
+.three {
+  width: calc(100%/4)
+}
+
+.four {
+  width: calc(100%/3)
+}
+
+.six {
+  width: calc(100%/2)
+}
+
+.five {
+  width: calc(100%/2.4)
+}
+
+.seven {
+  width: calc(100%/1.72)
+}
+
+.eight {
+  width: calc(100%/1.5)
+}
+
+.nine {
+  width: calc(100%/1.33333)
+}
+
+.ten {
+  width: calc(100%/1.2)
+}
+
+.eleven {
+  width: calc(100%/1.090909)
+}
+
+.twelve {
+  width: 100%;
+}

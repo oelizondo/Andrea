@@ -1,3 +1,8 @@
-@import 'andrea_mixins.css';
-@import 'andrea_rules.css';
-@import 'andrea_styles.css';
+@import 'src/mixins';
+@import 'src/rules';
+@import 'src/buttons';
+@import 'src/grid';
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}

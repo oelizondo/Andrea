@@ -1,25 +1,11 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.text-center {
-    text-align: center;
+.center {
+    text-align: center !important;
 }
 
 .margin-center {
     margin: 0 auto;
 }
 
-.flex {
-    display: flex;
-}
-
-.flex-wrap {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-}
 .flex-center {
     -webkit-justify-content: center;
             justify-content: center;

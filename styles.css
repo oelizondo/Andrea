@@ -1,0 +1,86 @@
+.center {
+  text-align: center !important; }
+
+.margin-center {
+  margin: 0 auto; }
+
+.flex-center {
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.flex-column {
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column; }
+
+.landing-height {
+  height: 100vh; }
+
+.vertical-align {
+  -webkit-align-items: center;
+  align-items: center; }
+
+.border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.buttons {
+  background: #171716;
+  padding: 5px;
+  border-radius: 15em;
+  width: 140px;
+  height: auto;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px; }
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+
+.one {
+  width: calc(100%/12); }
+
+.two {
+  width: calc(100%/6); }
+
+.three {
+  width: calc(100%/4); }
+
+.four {
+  width: calc(100%/3); }
+
+.six {
+  width: calc(100%/2); }
+
+.five {
+  width: calc(100%/2.4); }
+
+.seven {
+  width: calc(100%/1.72); }
+
+.eight {
+  width: calc(100%/1.5); }
+
+.nine {
+  width: calc(100%/1.33333); }
+
+.ten {
+  width: calc(100%/1.2); }
+
+.eleven {
+  width: calc(100%/1.090909); }
+
+.twelve {
+  width: 100%; }
+
+body {
+  font-family: 'Open Sans', sans-serif !important; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=styles.css.map */
