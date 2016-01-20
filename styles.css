@@ -1,10 +1,11 @@
+@charset "UTF-8";
 .center {
   text-align: center !important; }
 
-.margin-center {
+.margin-center, .form {
   margin: 0 auto; }
 
-.flex-center {
+.flex-center, .big {
   -webkit-justify-content: center;
   justify-content: center; }
 
@@ -16,7 +17,7 @@
 .landing-height {
   height: 100vh; }
 
-.vertical-align {
+.vertical-align, .big {
   -webkit-align-items: center;
   align-items: center; }
 
@@ -25,20 +26,39 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.buttons {
+.button {
   background: #171716;
-  padding: 5px;
+  padding: 3px;
   border-radius: 15em;
-  width: 140px;
-  height: auto;
+  width: 100px;
+  min-height: 50px;
   color: white;
   text-align: center;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  transition: 0.2s; }
+  .button:hover {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+    transition: 0.2s; }
+
+.big {
+  display: flex;
+  width: 170px;
+  height: 60ºpx; }
 
 .row {
   width: 100%;
   display: flex;
   flex-wrap: wrap; }
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto; }
 
 .one {
   width: calc(100%/12); }
@@ -75,6 +95,34 @@
 
 .twelve {
   width: 100%; }
+
+@media (max-width: 800px) {
+  .one,
+  .two,
+  .three,
+  .four,
+  .six,
+  .five,
+  .seven,
+  .eight,
+  .nine,
+  .ten,
+  .eleven,
+  .twelve {
+    width: 100%; } }
+input[type=url],
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+input[type=file],
+input[type=submit] {
+  height: 20px;
+  width: auto;
+  border: 1px solid #171716; }
+
+.form {
+  width: 70%; }
 
 body {
   font-family: 'Open Sans', sans-serif !important; }

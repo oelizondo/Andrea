@@ -19,3 +19,10 @@
     color: $color;
 }
 
+@mixin vertical-move($pixels) {
+    -webkit-transform: translateY($pixels);
+    -moz-transform: translateY($pixels);
+    -ms-transform: translateY($pixels);
+    -o-transform: translateY($pixels);
+    transform: translateY($pixels);
+}

@@ -1,10 +1,23 @@
-.buttons {
+.button {
   background: #171716;
-  padding: 5px;
+  padding: 3px;
   border-radius: 15em;
-  width: 140px;
-  height: auto;
+  width: 100px;
+  min-height: 50px;
   color: white;
   text-align: center;
-  letter-spacing: 2px; 
+  letter-spacing: 2px;
+  transition: 0.2s;
+  &:hover {
+    @include vertical-move(-5px);
+    transition: 0.2s;
+  }
+}
+
+.big {
+  display: flex;
+  @extend .vertical-align;
+  @extend .flex-center;
+  width: 170px;
+  height: 60ºpx;
 }
