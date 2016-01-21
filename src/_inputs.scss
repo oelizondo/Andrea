@@ -1,15 +1,24 @@
-input[type=url],
-input[type=text],
-input[type=password],
-input[type=number],
-input[type=email],
-input[type=file],
-input[type=submit] {
-  height: 20px;
-  width: auto;
-  border: 1px solid #171716; 
+.full {
+  input[type=url],
+  input[type=text],
+  input[type=password],
+  input[type=number],
+  input[type=email],
+  input[type=file],
+  input[type=submit] {
+    height: 20px;
+    width: 100%;
+    border: 1px solid #ededed; 
+    border-radius: 4px;
+    outline: none;
+    transition: 0.2s;
+    &:focus {
+      box-shadow: 0 0 3px rgba(0,0,0, 0.5);
+      outline: #171716;
+      transition: 0.2s;
+    }
+  }
 }
-
 .form {
   width: 70%;
   @extend .margin-center;

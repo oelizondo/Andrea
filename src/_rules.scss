@@ -1,5 +1,8 @@
 .center {
     text-align: center !important;
+    -webkit-justify-content: center; 
+    justify-content: center; 
+    margin: 0 auto;
 }
 
 .margin-center {

@@ -1,6 +1,9 @@
 @charset "UTF-8";
 .center {
-  text-align: center !important; }
+  text-align: center !important;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0 auto; }
 
 .margin-center, .form {
   margin: 0 auto; }
@@ -50,7 +53,7 @@
   height: 60ºpx; }
 
 .row {
-  width: 100%;
+  min-width: 100%;
   display: flex;
   flex-wrap: wrap; }
 
@@ -61,39 +64,52 @@
   margin: 0 auto; }
 
 .one {
+  display: flex;
   width: calc(100%/12); }
 
 .two {
+  display: flex;
   width: calc(100%/6); }
 
 .three {
+  display: flex;
   width: calc(100%/4); }
 
 .four {
+  display: flex;
   width: calc(100%/3); }
 
 .six {
-  width: calc(100%/2); }
+  display: flex;
+  min-width: calc(100%/2.1);
+  max-width: calc(100%/2.1); }
 
 .five {
+  display: flex;
   width: calc(100%/2.4); }
 
 .seven {
+  display: flex;
   width: calc(100%/1.72); }
 
 .eight {
+  display: flex;
   width: calc(100%/1.5); }
 
 .nine {
+  display: flex;
   width: calc(100%/1.33333); }
 
 .ten {
+  display: flex;
   width: calc(100%/1.2); }
 
 .eleven {
+  display: flex;
   width: calc(100%/1.090909); }
 
 .twelve {
+  display: flex;
   width: 100%; }
 
 @media (max-width: 800px) {
@@ -110,16 +126,29 @@
   .eleven,
   .twelve {
     width: 100%; } }
-input[type=url],
-input[type=text],
-input[type=password],
-input[type=number],
-input[type=email],
-input[type=file],
-input[type=submit] {
+.full input[type=url],
+.full input[type=text],
+.full input[type=password],
+.full input[type=number],
+.full input[type=email],
+.full input[type=file],
+.full input[type=submit] {
   height: 20px;
-  width: auto;
-  border: 1px solid #171716; }
+  width: 100%;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  outline: none;
+  transition: 0.2s; }
+  .full input[type=url]:focus,
+  .full input[type=text]:focus,
+  .full input[type=password]:focus,
+  .full input[type=number]:focus,
+  .full input[type=email]:focus,
+  .full input[type=file]:focus,
+  .full input[type=submit]:focus {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    outline: #171716;
+    transition: 0.2s; }
 
 .form {
   width: 70%; }
