@@ -1,13 +1,19 @@
 .button {
+  display: flex; 
+  @extend .vertical-align;
+  -webkit-justify-content: center; 
+  justify-content: center; 
   background: #171716;
   padding: 3px;
   border-radius: 15em;
   width: 100px;
-  min-height: 50px;
+  height: 30px;
   color: white;
-  text-align: center;
   letter-spacing: 2px;
   transition: 0.2s;
+  cursor: pointer; 
+  margin: 5px;
+  
   &:hover {
     @include vertical-move(-5px);
     transition: 0.2s;
@@ -15,9 +21,18 @@
 }
 
 .big {
-  display: flex;
-  @extend .vertical-align;
-  @extend .flex-center;
   width: 170px;
-  height: 60ºpx;
+  height: 60px;
+}
+
+.skeleton {
+  @extend .button;
+  background: transparent;
+  color: #171716;
+  border: 1px solid #171716;
+  &:hover {
+    background: #171716;
+    transition: 0.2s;
+    color: white;
+  }
 }
