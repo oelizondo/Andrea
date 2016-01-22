@@ -4,6 +4,21 @@ Yes, another front-end framework. Sue me.
 
 Demo: [Andrea](http://oelizondo.github.io/Andrea/)
 
+##Installation and usage
+
+To install Andrea, first switch to the ```installation``` branch and clone the repo.
+Then simply put the ```andrea``` folder inside your project, and reference it this way:
+
+```html
+
+  <link rel="stylesheet" href="andrea/normalize.css">
+  <link rel="stylesheet" href="andrea/andrea.css">
+
+```
+
+And you're ready to start working. If you like Sass, then you can checkout the ```src``` folder to move things around, or import it directly into your project.
+
+
 ##What does it come with?
 
 ###A 12-column grid
