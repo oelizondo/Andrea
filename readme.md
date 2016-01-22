@@ -2,7 +2,7 @@
 
 Yes, another front-end framework. Sue me.
 
-Demo: [Andrea]('http://oelizondo.github.io/Andrea/')
+Demo: [Andrea](http://oelizondo.github.io/Andrea/)
 
 ##What does it come with?
 
