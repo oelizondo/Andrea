@@ -1,29 +1,45 @@
+/* Import the mixins */
+/* Import the rules */
+/* General rules */
+body {
+  font-weight: 100; }
+
+/* Centering main rule */
 .center {
   text-align: center !important;
   -webkit-justify-content: center;
   justify-content: center;
   margin: 0 auto; }
 
-.margin-center, .form {
+.margin-center {
   margin: 0 auto; }
 
+/* Columns */
 .flex-column {
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column; }
 
+/* basic height for landing websites*/
 .landing-height {
   height: 100vh; }
 
+/* Vertical align (because it's a flex grid duh) */
 .vertical-align, .button, .skeleton {
   -webkit-align-items: center;
   align-items: center; }
 
+/* Idon't know what this is but it's cool when you use paddings */
 .border-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+hr {
+  width: 100%;
+  border: 1px solid black; }
+
+/* Import the buttons */
 .button, .skeleton {
   display: flex;
   -webkit-justify-content: center;
@@ -59,6 +75,7 @@
     transition: 0.2s;
     color: white; }
 
+/* Import the grid */
 .base-properties, .row, .container, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
   display: flex;
   flex-wrap: wrap; }
@@ -72,38 +89,48 @@
   margin: 0 auto; }
 
 .one {
-  width: calc(100%/12); }
+  width: calc(100%/12);
+  max-width: calc(100%/12); }
 
 .two {
-  width: calc(100%/6); }
+  width: calc(100%/6);
+  max-width: calc(100%/6); }
 
 .three {
-  width: calc(100%/4); }
+  width: calc(100%/4);
+  max-width: calc(100%/4); }
 
 .four {
-  width: calc(100%/3); }
+  width: calc(100%/3);
+  max-width: calc(100%/3); }
 
 .five {
-  width: calc(100%/2.4); }
+  width: calc(100%/2.4);
+  max-width: calc(100%/2.4); }
 
 .six {
   min-width: calc(100%/2.1);
   max-width: calc(100%/2.1); }
 
 .seven {
-  width: calc(100%/1.72); }
+  width: calc(100%/1.72);
+  max-width: calc(100%/1.72); }
 
 .eight {
-  width: calc(100%/1.5); }
+  width: calc(100%/1.5);
+  max-width: calc(100%/1.5); }
 
 .nine {
-  width: calc(100%/1.33333); }
+  width: calc(100%/1.33333);
+  max-width: calc(100%/1.33333); }
 
 .ten {
-  width: calc(100%/1.2); }
+  width: calc(100%/1.2);
+  max-width: calc(100%/1.2); }
 
 .eleven {
-  width: calc(100%/1.090909); }
+  width: calc(100%/1.090909);
+  max-width: calc(100%/1.090909); }
 
 .twelve {
   width: 100%; }
@@ -121,7 +148,12 @@
   .ten,
   .eleven,
   .twelve {
-    width: 100%; } }
+    min-width: 100%; } }
+/* Import the inputs */
+.form {
+  width: 90%;
+  padding: 10px; }
+
 .full input[type=url],
 .full input[type=text],
 .full input[type=password],
@@ -129,12 +161,13 @@
 .full input[type=email],
 .full input[type=file],
 .full input[type=submit] {
-  height: 20px;
+  height: 30px;
   width: 100%;
   border: 1px solid #ededed;
   border-radius: 4px;
   outline: none;
-  transition: 0.2s; }
+  transition: 0.2s;
+  margin: 10px; }
   .full input[type=url]:focus,
   .full input[type=text]:focus,
   .full input[type=password]:focus,
@@ -142,21 +175,32 @@
   .full input[type=email]:focus,
   .full input[type=file]:focus,
   .full input[type=submit]:focus {
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
     outline: #171716;
     transition: 0.2s; }
 
-.form {
-  width: 70%; }
-
+/* Import the headings */
 h1 {
   font-size: 2rem; }
 
+/* Import the links */
+a {
+  color: #171716;
+  opacity: 0.5;
+  transition: 0.2s;
+  text-decoration: none; }
+  a:hover {
+    opacity: 1;
+    transition: 0.2s; }
+
 body {
-  font-family: 'Open Sans', sans-serif !important; }
+  font-family: 'Lato', sans-serif; }
 
 body {
   margin: 0;
   padding: 0; }
+
+.footer {
+  margin-bottom: 50px; }
 
 /*# sourceMappingURL=styles.css.map */

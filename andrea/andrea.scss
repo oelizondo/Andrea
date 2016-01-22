@@ -1,0 +1,25 @@
+/* Import the mixins */
+@import 'src/mixins';
+
+/* Import the rules */
+@import 'src/rules';
+
+/* Import the buttons */
+@import 'src/buttons';
+
+/* Import the grid */
+@import 'src/grid';
+
+/* Import the inputs */
+@import 'src/inputs';
+
+/* Import the headings */
+@import 'src/headings';
+
+/* Import the links */
+@import 'src/links';
+
+
+body {
+ font-family: 'Lato', sans-serif;
+}

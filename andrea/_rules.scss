@@ -1,3 +1,9 @@
+/* General rules */
+body {
+    font-weight: 100;
+}
+
+/* Centering main rule */
 .center {
     text-align: center !important;
     -webkit-justify-content: center; 
@@ -9,22 +15,30 @@
     margin: 0 auto;
 }
 
+/* Columns */
 .flex-column {
     -webkit-flex-flow: column;
         -ms-flex-flow: column;
             flex-flow: column;
 }
 
+/* basic height for landing websites*/
 .landing-height {
     height: 100vh;
 }
 
+/* Vertical align (because it's a flex grid duh) */
 .vertical-align {
     -webkit-align-items: center;
             align-items: center;
 }
 
+/* Idon't know what this is but it's cool when you use paddings */
 .border-box {
     @include border-box;
 }
 
+hr {
+    width: 100%;
+    border: 1px solid black;
+}
