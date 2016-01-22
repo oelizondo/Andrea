@@ -2,18 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Andrea</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class="container landing-height">
-      <h1 class="title">Andrea</h1>
+    <div class="container landing-height flex-column">
+      <h1 class="title wow fadeIn">Andrea.</h1>
+      <h3 class="wow fadeIn" data-wow-delay="0.4s">A minimalist front-end framework.</h3>
+      <h4 class="wow fadeIn" data-wow-delay="0.4s">Yes, another one.</h4>
+      <img class="center wow infinte bounce infinite" src="assets/images/arrow_down.png" alt="" data-wow-delay="3s">
     </div>
     <div class="container landing-height">
       <div class="row">
         <div class="row section"><h3>Headings</h3></div>
-        <div class="three flex-column box">
+        <div class="three flex-column box wow fadeIn" data-wow-delay="1s">
           <h1>H1 Andrea</h1><br>
           <h2>H2 Andrea</h2><br>
           <h3>H3 Andrea</h3><br>
@@ -25,7 +29,7 @@
       <div class="row">
         <h3 class="section">Grid</h3>
       </div>
-      <div class="row">
+      <div class="row wow fadeIn">
         <div class="one box"><p>one</p></div>
         <div class="one box"><p>one</p></div>
         <div class="one box"><p>one</p></div>
@@ -39,7 +43,7 @@
         <div class="one box"><p>one</p></div>
         <div class="one box"><p>one</p></div>
       </div>
-      <div class="row">
+      <div class="row wow fadeIn" data-wow-delay="0.2s">
         <div class="two"><p>two</p></div>
         <div class="two"><p>two</p></div>
         <div class="two"><p>two</p></div>
@@ -47,39 +51,39 @@
         <div class="two"><p>two</p></div>
         <div class="two"><p>two</p></div>
       </div>
-      <div class="row">
+      <div class="row wow fadeIn" data-wow-delay="0.3s">
         <div class="three"><p>three</p></div>
         <div class="three"><p>three</p></div>
         <div class="three"><p>three</p></div>
         <div class="three"><p>three</p></div>
       </div>
-      <div class="row">
+      <div class="row wow fadeIn" data-wow-delay="0.4s">
         <div class="four"><p>four</p></div>
         <div class="four"><p>four</p></div>
         <div class="four"><p>four</p></div>
       </div>
-      <div class="row">
+      <div class="row wow fadeIn" data-wow-delay="0.5s">
         <div class="five"><p>five</p></div>
         <div class="seven"><p>seven</p></div>
       </div>
-      <div class="row">
+      <div class="row wow fadeIn" data-wow-delay="0.6s">
         <div class="six"><p>six</p></div>
         <div class="six"><p>six</p></div>
       </div>
-      <div class="row">
+      <div class="row wow fadeIn" data-wow-delay="0.7s">
         <div class="eight"><p>eight</p></div>
         <div class="four"><p>four</p></div>
       </div>
-      <div class="row center">
+      <div class="row center wow fadeIn" data-wow-delay="0.8s">
         <div class="six center"><p>six offset-by-3</p></div>
       </div>
-      <div class="row center"><p><strong>you get the idea</strong></p></div>
+      <div class="row center wow fadeIn" data-wow-delay="0.9s"><p><strong>you get the idea</strong></p></div>
     </div>
     <div class="container landing-height">
       <div class="row">
         <h3 class="section">Forms</h3>
       </div>
-      <div class="six">
+      <div class="six wow fadeIn">
         <div class="six">
           <div class="form full">
             <label for="">Example</label>
@@ -99,7 +103,7 @@
           </div>
         </div>
       </div>
-      <div class="six">
+      <div class="six wow fadeIn">
         <div class="form full">
           <label for="">Example</label>
           <input type="text">
@@ -111,23 +115,27 @@
         <h3 class="section">Buttons</h3>
       </div>
       <div class="row center">
-        <div class="button"><p>button</p></div>
-        <div class="button skeleton"><p>ghost</p></div>
-        <div class="button big"><p>big button</p></div>
+        <div class="button wow fadeIn" data-wow-delay="0s"><p>button</p></div>
+        <div class="button skeleton wow fadeIn" data-wow-delay="0.5s"><p>ghost</p></div>
+        <div class="button big wow fadeIn" data-wow-delay="0.8s"><p>big button</p></div>
       </div>
     </div>
     <div class="container landing-height">
       <div class="row flex-column">
         <h3 class="section">Links</h3>
-        <a href="">This what a link looks like.</a>
-        <a href="">What were you expecting?</a>
+        <a href="" class="wow fadeIn">This what a link looks like.</a>
+        <a href="" class="wow fadeIn" data-wow-delay="0.3s">What were you expecting?</a>
       </div>
     </div>
     <div class="container footer component">
       <div class="row">
-        <h3 class="section">The hr</h3>
-        <hr>
+        <h3 class="section" class="wow fadeIn">The hr</h3>
+        <hr class="wow fadeIn">
       </div>
     </div>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

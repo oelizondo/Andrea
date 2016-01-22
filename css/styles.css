@@ -5,7 +5,7 @@ body {
   padding: 0; }
 
 .footer {
-  margin-bottom: 50px; }
+  margin-bottom: 150px; }
 
 .title {
   font-size: 4.5rem;
@@ -16,4 +16,17 @@ body {
   font-size: 1.4rem;
 }
 
+img {
+  position: absolute;
+  bottom: 10%;
+  left: 48%;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 30px;
+  width: 30px;
+  opacity: 0.7;
+}
 /*# sourceMappingURL=styles.css.map */
