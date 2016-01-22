@@ -82,6 +82,11 @@
 }
 
 @media (max-width: 800px) {
+  
+  .container {
+    max-width: 320px;
+  }
+
   .one   ,
   .two   ,
   .three ,
