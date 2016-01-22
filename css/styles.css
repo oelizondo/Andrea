@@ -11,6 +11,10 @@ body {
   font-size: 4.5rem;
 }
 
+.landing-height {
+  min-height: 100vh !important;
+}
+
 .section {
   text-decoration: underline;
   font-size: 1.4rem;

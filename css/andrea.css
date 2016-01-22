@@ -22,7 +22,7 @@ body {
 
 /* basic height for landing websites*/
 .landing-height {
-  height: 100vh; }
+  min-height: 100vh; }
 
 /* Vertical align (because it's a flex grid duh) */
 .vertical-align, .button, .skeleton {
@@ -137,6 +137,9 @@ hr {
   width: 100%; }
 
 @media (max-width: 800px) {
+  .container {
+    max-width: 320px;
+  }
   .one,
   .two,
   .three,
