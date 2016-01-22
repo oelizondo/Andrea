@@ -11,8 +11,8 @@ Then simply put the ```andrea``` folder inside your project, and reference it th
 
 ```html
 
-  <link rel="stylesheet" href="andrea/normalize.css">
-  <link rel="stylesheet" href="andrea/andrea.css">
+  <link rel="stylesheet" href="Andrea/normalize.css">
+  <link rel="stylesheet" href="Andrea/andrea.css">
 
 ```
 

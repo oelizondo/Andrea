@@ -2,7 +2,7 @@
 /* Import the rules */
 /* General rules */
 body {
-  font-weight: 100; }
+  font-weight: 300; }
 
 /* Centering main rule */
 .center {
@@ -22,7 +22,7 @@ body {
 
 /* basic height for landing websites*/
 .landing-height {
-  height: 100vh; }
+  min-height: 100vh; }
 
 /* Vertical align (because it's a flex grid duh) */
 .vertical-align, .button, .skeleton {
@@ -150,7 +150,9 @@ hr {
   .eleven,
   .twelve {
     min-width: 100%; } }
-
+@media (max-width: 500px) {
+  .container {
+    max-width: 320px; } }
 /* Import the inputs */
 .form {
   width: 90%;
@@ -169,7 +171,8 @@ hr {
   border-radius: 4px;
   outline: none;
   transition: 0.2s;
-  margin: 10px; }
+  margin: 10px;
+  padding: 0 10px; }
   .full input[type=url]:focus,
   .full input[type=text]:focus,
   .full input[type=password]:focus,
@@ -178,7 +181,6 @@ hr {
   .full input[type=file]:focus,
   .full input[type=submit]:focus {
     font-size: 15px;
-    padding: 0 10px;
     box-shadow: 0 0 1px rgba(23, 23, 22, 0.5);
     outline: #171716;
     transition: 0.2s; }
@@ -199,3 +201,5 @@ a {
 
 body {
   font-family: 'Lato', sans-serif; }
+
+/*# sourceMappingURL=andrea.css.map */

@@ -18,9 +18,9 @@
     outline: none;
     transition: 0.2s;
     margin: 10px;
+    padding: 0 10px; 
     &:focus {
       font-size: 15px;
-      padding: 0 10px; 
       box-shadow: 0 0 1px rgba(23,23,22, 0.5);
       outline: #171716;
       transition: 0.2s;
