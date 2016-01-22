@@ -2,6 +2,8 @@
 
 Yes, another front-end framework. Sue me.
 
+Demo: [Andrea]('http://oelizondo.github.io/Andrea/')
+
 ##What does it come with?
 
 ###A 12-column grid
@@ -48,6 +50,6 @@ These rules are to make life easier, for exampls ```<div class="landing-height">
 
 Andrea is in version 0.0.1, or in an alpha stage. The main framework is done, but I expect to add layers of functionality in the future.
 
-###Rationele
+###Rationale
 
 No we don't need another web framework, and no I don't care. It was fun. That's it. And I'm not finished with it.
