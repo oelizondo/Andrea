@@ -15,6 +15,12 @@
   @extend .base-properties;
 }
 
+// .box {
+//   border: 1px solid #171716;
+//   -webkit-border-radius: 4px; 
+//   border-radius: 4px; 
+// }
+
 .one { 
   @extend .base-properties;
   width: calc(100%/12);
