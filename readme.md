@@ -59,11 +59,19 @@ Andrea comes with normalize as well.
 
 ###Some rules
 
-These rules are to make life easier, for exampls ```<div class="landing-height"></div>``` will create a dive that has 100vh height to make landing websites easier.
+These rules are to make life easier, for example ``` <div class="landing-height"></div>``` will create a div that has 100vh height to make landing websites easier.
 
 ###Version
 
 Andrea is in version 0.0.1, or in an alpha stage. The main framework is done, but I expect to add layers of functionality in the future.
+
+###Contributing
+
+Easiest way to get your environment running is the the ```package.json``` we included in the repo, simply ```npm install``` after you clone it, and then:
+
+* Make your changes.
+* Push.
+* Pull request to this master branch.
 
 ###Rationale
 
