@@ -1,0 +1,25 @@
+{
+  "name": "andrea",
+  "version": "0.0.1",
+  "homepage": "https://github.com/oelizondo/Andrea",
+  "authors": [
+    "oelizondo <oscarmarcelo95@gmail.com>"
+  ],
+  "description": "A minimalistic front-end framework for rapid prototyping.",
+  "main": "andrea.css",
+  "moduleType": [],
+  "keywords": [
+    "andrea",
+    "css",
+    "Andrea",
+    "framework",
+    "front-end"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

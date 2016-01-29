@@ -136,10 +136,7 @@ hr {
 .twelve {
   width: 100%; }
 
-@media (max-width: 800px) {
-  .container {
-    max-width: 320px;
-  }
+@media (max-width: 500px) {
   .one,
   .two,
   .three,
@@ -152,7 +149,13 @@ hr {
   .ten,
   .eleven,
   .twelve {
-    min-width: 100%; } }
+    min-width: 100%; }
+  .container {
+    max-width: 650px; } }
+
+@media (max-width: 450px) {
+  .container {
+    max-width: 350px; } }
 
 /* Import the inputs */
 .form {
@@ -167,7 +170,6 @@ hr {
 .full input[type=file],
 .full input[type=submit] {
   height: 30px;
-  padding: 0 10px;
   width: 100%;
   border: 1px solid #ededed;
   border-radius: 4px;
@@ -182,9 +184,10 @@ hr {
   .full input[type=file]:focus,
   .full input[type=submit]:focus {
     font-size: 15px;
+    padding: 0 10px;
     box-shadow: 0 0 1px rgba(23, 23, 22, 0.5);
     outline: #171716;
-    transition: 0.5s; }
+    transition: 0.2s; }
 
 /* Import the headings */
 h1 {
