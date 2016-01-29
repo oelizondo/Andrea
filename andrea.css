@@ -6,16 +6,17 @@ body {
 
 /* Centering main rule */
 .center {
-  text-align: center !important;
   -webkit-justify-content: center;
-  justify-content: center;
-  margin: 0 auto; }
+  justify-content: center; }
+
+.text-center {
+  text-align: center; }
 
 .margin-center {
   margin: 0 auto; }
 
 /* Columns */
-.flex-column {
+.column {
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column; }
@@ -86,7 +87,7 @@ hr {
   max-width: 100%; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto; }
 
 .one {
@@ -136,7 +137,7 @@ hr {
 .twelve {
   width: 100%; }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .one,
   .two,
   .three,
@@ -149,10 +150,13 @@ hr {
   .ten,
   .eleven,
   .twelve {
-    min-width: 100%; } }
-@media (max-width: 500px) {
+    min-width: 100%; }
+
   .container {
-    max-width: 320px; } }
+    max-width: 450px; } }
+@media (max-width: 450px) {
+  .container {
+    max-width: 350px; } }
 /* Import the inputs */
 .form {
   width: 90%;

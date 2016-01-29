@@ -5,10 +5,12 @@ body {
 
 /* Centering main rule */
 .center {
-    text-align: center !important;
     -webkit-justify-content: center; 
     justify-content: center; 
-    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .margin-center {
@@ -16,7 +18,7 @@ body {
 }
 
 /* Columns */
-.flex-column {
+.column {
     -webkit-flex-flow: column;
         -ms-flex-flow: column;
             flex-flow: column;
