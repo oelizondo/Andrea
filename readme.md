@@ -6,14 +6,28 @@ Demo: [Andrea](http://oelizondo.github.io/Andrea/)
 
 ##Installation and usage
 
-To install Andrea, first switch to the ```installation``` branch and clone the repo.
-Then simply put the ```andrea``` folder inside your project, and reference it this way:
+There are several ways to install andrea:
 
+1. With Bower: ```bower instal andrea```.
+2. Clone this repo into your project.
+3. Copy and paste [Raw](https://raw.githubusercontent.com/oelizondo/Andrea/master/andrea.css).
+
+Cloning the repo:
 ```html
-
   <link rel="stylesheet" href="Andrea/normalize.css">
   <link rel="stylesheet" href="Andrea/andrea.css">
 
+```
+With Bower:
+```html
+  <link rel="stylesheet" href="bower_components/andrea/normalize.css">
+  <link rel="stylesheet" href="bower_components/andrea/andrea.css">
+
+```
+If you copy-and-pasted it:
+```html
+  <link rel="stylesheet" href="path/to/andrea/normalize.css">
+  <link rel="stylesheet" href="path/to/andrea/Andrea/andrea.css">
 ```
 
 And you're ready to start working. If you like Sass, then you can checkout the ```src``` folder to move things around, or import it directly into your project.
@@ -24,7 +38,6 @@ And you're ready to start working. If you like Sass, then you can checkout the `
 ###A 12-column grid
 
 ```html
-
   <div class="one"></div>
   <div class="two"></div>
   <div class="three"></div>
@@ -41,8 +54,17 @@ And you're ready to start working. If you like Sass, then you can checkout the `
   <div class="row"></div>
 
   <div class="container"></div>
-
 ```
+
+####Offsets. 
+
+To make an offset of the grid (like having only 3 columns in the center), then just do:
+
+```html
+<div class="three center"></div>
+``` 
+To to make it off-set.
+
 
 ###Some buttons
 
@@ -54,16 +76,31 @@ And you're ready to start working. If you like Sass, then you can checkout the `
 
 ###Some base styles
 
-Base styles have been included for the ```<hr>```, anchors and headings.
-Andrea comes with normalize as well.
+Base styles have been included for the ```<hr>```, anchors and headings. Andrea comes with normalize as well.
 
 ###Some rules
 
 These rules are to make life easier, for example ``` <div class="landing-height"></div>``` will create a div that has 100vh height to make landing websites easier.
 
+Different ways of centering:
+
+* ```.center``` Center the element with the class with flex.
+* ```.text-center``` Centers the text with the class using text-align: center.
+* ```.margin-center``` Center the element with the class using margins.
+
+Column:
+
+* ```.column``` Makes the flow of the container column.
+
+Vertical Align:
+
+* ```.vertical-align``` To the container, aligns its children vertically.
+
+
+
 ###Version
 
-Andrea is in version 0.0.1, or in an alpha stage. The main framework is done, but I expect to add layers of functionality in the future.
+Andrea is in version 0.0.2, or in an alpha stage. The main framework is done, but I expect to add layers of functionality in the future. This is not the final product so issues are welcome for improvement.
 
 ###Contributing
 
