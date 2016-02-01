@@ -87,6 +87,7 @@ hr {
   max-width: 100%; }
 
 .container {
+  width: 1100px;
   max-width: 1100px;
   margin: 0 auto; }
 
@@ -205,3 +206,5 @@ a {
 
 body {
   font-family: 'Lato', sans-serif; }
+
+/*# sourceMappingURL=andrea.css.map */
