@@ -1,4 +1,6 @@
 .base-properties {
+  -webkit-display: flex;
+  -moz-display: flex;
   display: flex;
   flex-wrap: wrap; 
 }

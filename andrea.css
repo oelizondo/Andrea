@@ -79,6 +79,8 @@ hr {
 
 /* Import the grid */
 .base-properties, .row, .container, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
+  -webkit-display: flex;
+  -moz-display: flex;
   display: flex;
   flex-wrap: wrap; }
 
