@@ -97,8 +97,8 @@ hr {
   max-width: 100%; }
 
 .container {
-  width: 1100px;
-  max-width: 1100px;
+  width: 950px;
+  max-width: 950px;
   margin: 0 auto; }
 
 .one {
@@ -148,7 +148,7 @@ hr {
 .twelve {
   width: 100%; }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .one,
   .two,
   .three,
@@ -167,7 +167,7 @@ hr {
     max-width: 450px; } }
 @media (max-width: 450px) {
   .container {
-    max-width: 350px; } }
+    max-width: 250px; } }
 /* Import the inputs */
 .form {
   width: 90%;
