@@ -70,8 +70,8 @@ To to make it off-set.
 
 ```html
   <div class="button"></div>
-  <div class="ghost"></div>
-  <div class="big button"></div>
+  <div class="button-skeleton"></div>
+  <div class="button-big"></div>
 ```
 
 ###Some base styles

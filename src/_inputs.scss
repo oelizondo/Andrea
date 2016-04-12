@@ -23,7 +23,11 @@
       font-size: 15px;
       box-shadow: 0 0 1px rgba(23,23,22, 0.5);
       outline: #171716;
-      transition: 0.2s;
+      -webkit-transition: 0.2s; 
+      -moz-transition: 0.2s; 
+      -ms-transition: 0.2s; 
+      -o-transition: 0.2s; 
+      transition: 0.2s; 
     }
   }
 }

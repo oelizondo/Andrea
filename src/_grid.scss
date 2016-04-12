@@ -1,3 +1,4 @@
+//Flex Base Style
 .base-properties {
   -webkit-display: flex;
   -moz-display: flex;
@@ -6,16 +7,15 @@
 }
 
 .row {
+  @extend .base-properties;
   min-width: 100%;
   max-width: 100%;
-  @extend .base-properties;
 }
 
 .container {
   width: 950px; 
   max-width: 950px;
   margin: 0 auto;
-  @extend .base-properties;
 }
 
 .one { 
@@ -78,7 +78,7 @@
   width: 100%; 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .one   ,
   .two   ,
   .three ,
@@ -90,15 +90,15 @@
   .nine  ,
   .ten   ,
   .eleven,
-  .twelve { min-width: 100%; }
+  .twelve    { min-width: 100%; }
+  .container { max-width: 100%; }
+}
 
-  .container {
-    max-width: 450px;
-  }
+@media (max-width: 700px) {
+  .container { max-width: 100%; }
 }
 
 @media (max-width: 450px) {
-  .container {
-    max-width: 250px; 
-  }
+  .container { max-width: 100%; }
 }
+

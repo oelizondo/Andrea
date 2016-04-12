@@ -1,8 +1,9 @@
 .button {
-  display: flex; 
   @extend .vertical-align;
-  -webkit-justify-content: center; 
+  display: flex; 
+  -webkit-display: flex;
   justify-content: center; 
+  -webkit-justify-content: center; 
   background: #171716;
   padding: 3px;
   border-radius: 15em;
@@ -10,29 +11,41 @@
   height: 30px;
   color: white;
   letter-spacing: 2px;
-  transition: 0.2s;
+  -webkit-transition: 0.2s; 
+  -moz-transition: 0.2s; 
+  -ms-transition: 0.2s; 
+  -o-transition: 0.2s; 
+  transition: 0.2s; 
   cursor: pointer; 
   margin: 5px;
   
   &:hover {
     @include vertical-move(-5px);
-    transition: 0.2s;
+    -webkit-transition: 0.2s; 
+    -moz-transition: 0.2s; 
+    -ms-transition: 0.2s; 
+    -o-transition: 0.2s; 
+    transition: 0.2s; 
   }
 }
 
-.big {
+.button-big {
   width: 170px;
   height: 60px;
 }
 
-.skeleton {
+.button-skeleton {
   @extend .button;
   background: transparent;
   color: #171716;
   border: 1px solid #171716;
   &:hover {
     background: #171716;
-    transition: 0.2s;
+    -webkit-transition: 0.2s; 
+    -moz-transition: 0.2s; 
+    -ms-transition: 0.2s; 
+    -o-transition: 0.2s; 
+    transition: 0.2s; 
     color: white;
   }
 }

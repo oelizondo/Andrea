@@ -34,7 +34,7 @@ body {
   min-height: 100vh; }
 
 /* Vertical align (because it's a flex grid duh) */
-.vertical-align, .button, .skeleton {
+.vertical-align, .button, .button-skeleton {
   -webkit-align-items: center;
   align-items: center; }
 
@@ -50,10 +50,11 @@ hr {
   border: 1px solid black; }
 
 /* Import the buttons */
-.button, .skeleton {
+.button, .button-skeleton {
   display: flex;
-  -webkit-justify-content: center;
+  -webkit-display: flex;
   justify-content: center;
+  -webkit-justify-content: center;
   background: #171716;
   padding: 3px;
   border-radius: 15em;
@@ -61,32 +62,44 @@ hr {
   height: 30px;
   color: white;
   letter-spacing: 2px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
   margin: 5px; }
-  .button:hover, .skeleton:hover {
+  .button:hover, .button-skeleton:hover {
     -webkit-transform: translateY(-5px);
     -moz-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     -o-transform: translateY(-5px);
     transform: translateY(-5px);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s; }
 
-.big {
+.button-big {
   width: 170px;
   height: 60px; }
 
-.skeleton {
+.button-skeleton {
   background: transparent;
   color: #171716;
   border: 1px solid #171716; }
-  .skeleton:hover {
+  .button-skeleton:hover {
     background: #171716;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
     color: white; }
 
 /* Import the grid */
-.base-properties, .row, .container, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
+.base-properties, .row, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
   -webkit-display: flex;
   -moz-display: flex;
   display: flex;
@@ -148,7 +161,7 @@ hr {
 .twelve {
   width: 100%; }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .one,
   .two,
   .three,
@@ -164,10 +177,13 @@ hr {
     min-width: 100%; }
 
   .container {
-    max-width: 450px; } }
+    max-width: 100%; } }
+@media (max-width: 700px) {
+  .container {
+    max-width: 100%; } }
 @media (max-width: 450px) {
   .container {
-    max-width: 250px; } }
+    max-width: 100%; } }
 /* Import the inputs */
 .form {
   width: 90%;
@@ -198,6 +214,10 @@ hr {
     font-size: 15px;
     box-shadow: 0 0 1px rgba(23, 23, 22, 0.5);
     outline: #171716;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s; }
 
 /* Import the headings */
@@ -208,10 +228,18 @@ h1 {
 a {
   color: #171716;
   opacity: 0.5;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
   text-decoration: none; }
   a:hover {
     opacity: 1;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s; }
 
 body {
