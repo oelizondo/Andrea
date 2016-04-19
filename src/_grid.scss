@@ -3,7 +3,8 @@
   -webkit-display: flex;
   -moz-display: flex;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 }
 
 .row {
@@ -13,9 +14,10 @@
 }
 
 .container {
+  @extend .base-properties;
   width: 950px; 
   max-width: 950px;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
 
 .one { 
@@ -78,7 +80,7 @@
   width: 100%; 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .one   ,
   .two   ,
   .three ,

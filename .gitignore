@@ -3,3 +3,4 @@ node_modules
 .sass-cache
 styles.css.map
 andrea.css.map
+*.html
