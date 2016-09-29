@@ -2,35 +2,55 @@
 body {
     font-weight: 300;
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    font-family: "Lucida Console", Monaco, monospace;
 }
 
+/* Soft Resets */
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margn-or-padding {
+    @extend .no-margin;
+    @extend .no-padding;
+}
+
+.flex {
+    display: flex;
+    -webkit-display: flex; 
+}
 /* Centering main rule */
-.center {
+.flex-center {
     -webkit-justify-content: center; 
     justify-content: center; 
 }
 
-.right {
+.flex-right {
     -webkit-justify-content: flex-end; 
     justify-content: flex-end; 
 }
 
-.left {
+.flex-left {
     -webkit-justify-content: flex-start; 
     justify-content: flex-start; 
+}
+
+.even-spaced {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
 }
 
 .text-center {
     text-align: center;
 }
 
-.margin-center {
-    margin: 0 auto;
-}
-
 /* Columns */
-.column {
+.column-flow {
     -webkit-flex-flow: column;
         -ms-flex-flow: column;
             flex-flow: column;
@@ -47,13 +67,7 @@ body {
             align-items: center;
 }
 
-/* Idon't know what this is but it's cool when you use paddings */
+/* I don't know what this is but it's cool when you use paddings */
 .border-box {
     @include border-box;
-}
-
-hr {
-    height: 0.1px;
-    width: 100%;
-    border: 1px solid black;
 }

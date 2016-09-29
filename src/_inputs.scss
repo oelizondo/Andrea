@@ -11,22 +11,22 @@
   input[type=email],
   input[type=file],
   input[type=submit] {
-    height: 30px;
-    width: 100%;
-    border: 1px solid #ededed; 
     border-radius: 4px;
-    outline: none;
-    transition: 0.2s;
+    border: 1px solid #ededed; 
+    height: 30px;
     margin: 10px;
+    outline: none;
     padding: 0 10px; 
+    transition: 0.2s;
+    width: 100%;
     &:focus {
-      font-size: 15px;
-      box-shadow: 0 0 1px rgba(23,23,22, 0.5);
-      outline: #171716;
-      -webkit-transition: 0.2s; 
       -moz-transition: 0.2s; 
       -ms-transition: 0.2s; 
       -o-transition: 0.2s; 
+      -webkit-transition: 0.2s; 
+      box-shadow: 0 0 1px rgba(23,23,22, 0.5);
+      font-size: 15px;
+      outline: #171716;
       transition: 0.2s; 
     }
   }

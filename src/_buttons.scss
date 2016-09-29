@@ -1,14 +1,12 @@
 .button {
-  @extend .vertical-align;
-  -webkit-display: flex;
-  -webkit-justify-content: center; 
+  @extend .flex;
+  @extend .flex-center;
+  @extend .vertical-align; 
   background: #171716;
   border-radius: 15em;
   color: white;
   cursor: pointer; 
-  display: flex; 
   height: 30px;
-  justify-content: center; 
   letter-spacing: 2px;
   margin: 5px;
   padding: 3px;
@@ -16,8 +14,8 @@
 }
 
 .button-big {
-  width: 170px;
   height: 60px;
+  width: 170px;
 }
 
 .button-skeleton {

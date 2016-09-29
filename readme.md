@@ -8,28 +8,19 @@ Demo: [Andrea](http://oelizondo.github.io/Andrea/)
 
 There are several ways to install andrea:
 
-1. With Bower: ```bower instal andrea```.
-2. Clone this repo into your project.
+1. Clone this repo into your project.
 3. Copy and paste [Raw](https://raw.githubusercontent.com/oelizondo/Andrea/master/andrea.css).
 
 Cloning the repo:
 ```html
-  <link rel="stylesheet" href="Andrea/normalize.css">
   <link rel="stylesheet" href="Andrea/andrea.css">
-```
-With Bower:
-```html
-  <link rel="stylesheet" href="bower_components/andrea/normalize.css">
-  <link rel="stylesheet" href="bower_components/andrea/andrea.css">
 ```
 If you copy-and-pasted it:
 ```html
-  <link rel="stylesheet" href="path/to/andrea/normalize.css">
   <link rel="stylesheet" href="path/to/andrea/Andrea/andrea.css">
 ```
 
 And you're ready to start working. If you like Sass, then you can checkout the ```src``` folder to move things around, or import it directly into your project.
-
 
 ## What does it come with?
 
@@ -59,12 +50,12 @@ And you're ready to start working. If you like Sass, then you can checkout the `
 To make an offset of the grid (like having only 3 columns in the center), then just do:
 
 ```html
-<div class="three center"></div>
+<div class="three flex-center"></div>
 ``` 
 To to make it off-set.
 
 
-### Some buttons
+### Buttons
 
 ```html
   <div class="button"></div>
@@ -72,17 +63,17 @@ To to make it off-set.
   <div class="button-big"></div>
 ```
 
-### Some base styles
+### Base styles
 
 Base styles have been included for the ```<hr>```, ```<a href=""></a>``` and ```headings```. Andrea comes with normalize as well.
 
-### Some rules
+### Rules
 
 We've included some resets that help you like:
 
 ```css
 body {
-  margin: 0:
+  margin: 0;
   padding: 0;
 }
 ```
@@ -91,12 +82,12 @@ These rules are to make life easier, for example ``` <div class="landing-height"
 
 Different ways of centering:
 
-* ```.center``` Center the element with the class with flex.
+* ```.flex-center``` Center the element with the class with flex.
 * ```.text-center``` Centers the text with the class using text-align: center.
 
 Column:
 
-* ```.column``` Makes the flow of the container column.
+* ```.column-flow``` Makes the flow of the container column.
 
 Vertical Align:
 
@@ -104,9 +95,24 @@ Vertical Align:
 
 Other Aligns
 
-* ```.left``` to align to the left.
-* ```.right``` to align to the right.
+* ```.flex-left``` to align to the left.
+* ```.flex-right``` to align to the right.
+* ```.even-spaced``` to make the spaces between them even.
 
+Soft Resets
+
+* ```.no-margin```
+* ```.no-padding```
+* ```.no-margin-or-padding```
+
+### Mixins
+
+Here are some useful mixins:
+
+Rotate
+
+* ```@include rotate($some-degrees) ```
+* ```@include font-styles($some-family, $some-weight, $some-size, $some-color) ```
 
 ### Version
 
@@ -114,7 +120,10 @@ Andrea is in version 0.0.3, or in an alpha stage. The main framework is done, bu
 
 ### Contributing
 
-Easiest way to get your environment running is the the ```package.json``` we included in the repo, simply ```npm install``` after you clone it, and then:
+Easiest way to get your environment running is command 
+```console
+ sass src/andrea.scss:src/andrea.css --watch
+```
 
 * Make your changes.
 * Push.
