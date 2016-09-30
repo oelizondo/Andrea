@@ -84,14 +84,16 @@ body {
     color: white; }
 
 /* Import the grid */
-.base-properties, .row, .container, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
+.base-properties {
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex; }
+
+.row {
   -webkit-display: flex;
   -moz-display: flex;
   display: flex;
   flex-wrap: wrap;
-  -webkit-flex-wrap: wrap; }
-
-.row {
   min-width: 100%;
   max-width: 100%; }
 

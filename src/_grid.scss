@@ -3,81 +3,69 @@
   -webkit-display: flex;
   -moz-display: flex;
   display: flex;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
 }
 
 .row {
-  @extend .base-properties;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  flex-wrap: wrap;
   min-width: 100%;
   max-width: 100%;
 }
 
 .container {
-  @extend .base-properties;
-  width: 950px; 
+  width: 950px;
   max-width: 950px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
-.one { 
-  @extend .base-properties;
+.one {
   width: calc(100%/12);
   max-width: calc(100%/12);
 }
-.two { 
-  @extend .base-properties;
+.two {
   width: calc(100%/6);
   max-width: calc(100%/6);
 }
-.three { 
-  @extend .base-properties;
+.three {
   width: calc(100%/4);
   max-width: calc(100%/4);
 }
-.four { 
-  @extend .base-properties;
+.four {
   width: calc(100%/3);
   max-width: calc(100%/3);
 }
-.five { 
-  @extend .base-properties;
+.five {
   width: calc(100%/2.4);
   max-width: calc(100%/2.4);
 }
-.six { 
-  @extend .base-properties;
+.six {
   min-width: calc(100%/2.1);
   max-width: calc(100%/2.1);
 }
-.seven { 
-  @extend .base-properties;
+.seven {
   width: calc(100%/1.72);
   max-width: calc(100%/1.72);
 }
-.eight { 
-  @extend .base-properties;
+.eight {
   width: calc(100%/1.5);
   max-width: calc(100%/1.5);
 }
-.nine { 
-  @extend .base-properties;
+.nine {
   width: calc(100%/1.33333);
   max-width: calc(100%/1.33333);
 }
-.ten { 
-  @extend .base-properties;
+.ten {
   width: calc(100%/1.2);
   max-width: calc(100%/1.2);
 }
-.eleven { 
-  @extend .base-properties;
+.eleven {
   width: calc(100%/1.090909);
   max-width: calc(100%/1.090909);
 }
-.twelve { 
-  @extend .base-properties;
-  width: 100%; 
+.twelve {
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -103,4 +91,3 @@
 @media (max-width: 450px) {
   .container { max-width: 100%; }
 }
-

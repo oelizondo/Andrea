@@ -4,3 +4,4 @@ node_modules
 styles.css.map
 andrea.css.map
 *.html
+src/style.css
