@@ -1,73 +1,77 @@
 /* General rules */
 body {
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    font-family: "Lucida Console", Monaco, monospace;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
 /* Soft Resets */
 .no-margin {
-    margin: 0;
+  margin: 0;
 }
 
 .no-padding {
-    padding: 0;
+  padding: 0;
 }
 
 .no-margn-or-padding {
-    @extend .no-margin;
-    @extend .no-padding;
+  @extend .no-margin;
+  @extend .no-padding;
 }
 
 .flex {
-    display: flex;
-    -webkit-display: flex; 
+  display: flex;
+  -webkit-display: flex; 
 }
 /* Centering main rule */
 .flex-center {
-    -webkit-justify-content: center; 
-    justify-content: center; 
+  -webkit-justify-content: center; 
+  justify-content: center; 
 }
 
 .flex-right {
-    -webkit-justify-content: flex-end; 
-    justify-content: flex-end; 
+  -webkit-justify-content: flex-end; 
+  justify-content: flex-end; 
 }
 
 .flex-left {
-    -webkit-justify-content: flex-start; 
-    justify-content: flex-start; 
+  -webkit-justify-content: flex-start; 
+  justify-content: flex-start; 
 }
 
 .even-spaced {
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 /* Columns */
 .column-flow {
-    -webkit-flex-flow: column;
-        -ms-flex-flow: column;
-            flex-flow: column;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 /* basic height for landing websites*/
 .landing-height {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 /* Vertical align (because it's a flex grid duh) */
 .vertical-align {
-    -webkit-align-items: center;
-            align-items: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 
+.circulate {
+  -webkit-border-radius: 50%; 
+  border-radius: 50%; 
+}
 /* I don't know what this is but it's cool when you use paddings */
 .border-box {
-    @include border-box;
+  @include border-box;
 }

@@ -1,0 +1,12 @@
+.navigation {
+  @extend .row;
+  position: fixed;
+  -webkit-box-shadow: 0 3px 3px #f1f1f1; 
+  box-shadow: 0 3px 3px #f1f1f1; 
+  ul {
+    list-style: none;
+    li {
+      display: inline-block; 
+    }
+  }
+}
