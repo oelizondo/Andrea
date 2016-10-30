@@ -53,6 +53,10 @@ body {
   -webkit-align-items: center;
   align-items: center; }
 
+.circulate {
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+
 /* I don't know what this is but it's cool when you use paddings */
 .border-box {
   -webkit-box-sizing: border-box;
@@ -78,20 +82,24 @@ body {
 .button-skeleton {
   background: transparent;
   border: 1px solid #171716;
-  color: #171716; }
+  color: #171716;
+  transition: 0.2s; }
   .button-skeleton:hover {
     background: #171716;
-    color: white; }
+    color: white;
+    transition: 0.2s; }
 
 /* Import the grid */
-.base-properties, .row, .container, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
+.base-properties {
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex; }
+
+.row, .navigation {
   -webkit-display: flex;
   -moz-display: flex;
   display: flex;
   flex-wrap: wrap;
-  -webkit-flex-wrap: wrap; }
-
-.row {
   min-width: 100%;
   max-width: 100%; }
 
@@ -227,5 +235,15 @@ a {
     -webkit-transition: 0.2s;
     opacity: 1;
     transition: 0.2s; }
+
+/* Import Navigation */
+.navigation {
+  position: fixed;
+  -webkit-box-shadow: 0 3px 3px #f1f1f1;
+  box-shadow: 0 3px 3px #f1f1f1; }
+  .navigation ul {
+    list-style: none; }
+    .navigation ul li {
+      display: inline-block; }
 
 /*# sourceMappingURL=andrea.css.map */
